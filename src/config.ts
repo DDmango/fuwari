@@ -42,9 +42,9 @@ export const siteConfig: SiteConfig = {
 	giscus: {
 		enable: true, // Set to true to enable Giscus comments
 		repo: "DDmango/fuwari", // Your GitHub repository
-		repoId: "R_kgDOJw210g", // Replace with your GitHub repository ID
+		repoId: "R_kgDOSBSrbA", // Replace with your GitHub repository ID
 		category: "Comments", // Replace with your discussion category
-		categoryId: "DIC_kwDOJw210s4COX14", // Replace with your discussion category ID
+		categoryId: "DIC_kwDOSBSrbM4C6_zR", // Replace with your discussion category ID
 		mapping: "pathname", // How to map blog posts to discussions
 		reactionsEnabled: true, // Enable reactions
 		dataStrict: true, // Strict mode

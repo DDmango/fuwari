@@ -29,17 +29,29 @@ export const siteConfig: SiteConfig = {
 		enable: true, // Display the table of contents on the right side of the post
 		depth: 2, // Maximum heading depth to show in the table, from 1 to 3
 	},
-	favicon: [ 
+	favicon: [
 		// Leave this array empty to use the default favicon
-		 {
-			src: 'https://ddtuc.netlify.app/dd/touxiang.jpg',
+		{
+			src: "https://ddtuc.netlify.app/dd/touxiang.jpg",
 			//  src: './src/img/wechat.jpg',
-		//   src: '/favicon/icon.png',    // Path of the favicon, relative to the /public directory
-		//   theme: 'light',              // (Optional) Either 'light' or 'dark', set only if you have different favicons for light and dark mode
-		//   sizes: '32x32',              // (Optional) Size of the favicon, set only if you have favicons of different sizes
-		 }
-		
+			//   src: '/favicon/icon.png',    // Path of the favicon, relative to the /public directory
+			//   theme: 'light',              // (Optional) Either 'light' or 'dark', set only if you have different favicons for light and dark mode
+			//   sizes: '32x32',              // (Optional) Size of the favicon, set only if you have favicons of different sizes
+		},
 	],
+	giscus: {
+		enable: true, // Set to true to enable Giscus comments
+		repo: "DDmango/fuwari", // Your GitHub repository
+		repoId: "R_kgDOJw210g", // Replace with your GitHub repository ID
+		category: "Comments", // Replace with your discussion category
+		categoryId: "DIC_kwDOJw210s4COX14", // Replace with your discussion category ID
+		mapping: "pathname", // How to map blog posts to discussions
+		reactionsEnabled: true, // Enable reactions
+		dataStrict: true, // Strict mode
+		theme: "preferred_color_scheme", // Theme (light/dark/system)
+		lang: "zh-CN", // Language
+		loading: "lazy", // Loading mode
+	},
 };
 
 export const navBarConfig: NavBarConfig = {
@@ -96,5 +108,3 @@ export const expressiveCodeConfig: ExpressiveCodeConfig = {
 	// Please select a dark theme, as this blog theme currently only supports dark background color
 	theme: "github-dark",
 };
-
-

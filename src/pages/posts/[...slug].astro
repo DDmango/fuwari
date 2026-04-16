@@ -106,6 +106,30 @@ const jsonLd = {
                 <Content />
             </Markdown>
 
+            {siteConfig.giscus?.enable && (
+                <div class="mt-8 mb-6 onload-animation">
+                    <h3 class="text-xl font-bold mb-4 text-black/90 dark:text-white/90">评论</h3>
+                    <div class="bg-[var(--card-bg)] rounded-[var(--radius-large)] p-6">
+                        <script
+                            src="https://giscus.app/client.js"
+                            data-repo={siteConfig.giscus.repo}
+                            data-repo-id={siteConfig.giscus.repoId}
+                            data-category={siteConfig.giscus.category}
+                            data-category-id={siteConfig.giscus.categoryId}
+                            data-mapping={siteConfig.giscus.mapping}
+                            data-reactions-enabled={siteConfig.giscus.reactionsEnabled ? '1' : '0'}
+                            data-emit-metadata="0"
+                            data-input-position="bottom"
+                            data-theme={siteConfig.giscus.theme}
+                            data-lang={siteConfig.giscus.lang}
+                            data-loading={siteConfig.giscus.loading}
+                            crossorigin="anonymous"
+                            async
+                        ></script>
+                    </div>
+                </div>
+            )}
+
             {licenseConfig.enable && <License title={entry.data.title} slug={entry.slug} pubDate={entry.data.published} class="mb-6 rounded-xl license-container onload-animation"></License>}
 
         </div>
